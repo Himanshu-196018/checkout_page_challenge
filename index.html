@@ -24,32 +24,28 @@
         <!-- list of products -->
         <div class="cart-list">
           <div class="products">
-            <div class="item">
-              <img src="images/photo1.png" alt="" max-width="134px" />
-              <div class="item-info">
-                <h3 class="item-name">Vintage Backbag</h3>
-                <div class="prices">
-                  <span class="price">$54.99</span
-                  ><span class="original-price">$94..99</span>
-                </div>
-
-                <div class="quantity"></div>
+            <img src="images/photo1.png" alt="" max-width="134px" />
+            <div class="item-info">
+              <h3 class="item-name">Vintage Backbag</h3>
+              <div class="prices">
+                <span class="price">$54.99</span
+                ><span class="original-price">$94..99</span>
               </div>
+
+              <div class="quantity"></div>
             </div>
           </div>
 
           <div class="products">
-            <div class="item">
-              <img src="images/photo2.png" alt="" max-width="134px" />
-              <div class="item-info">
-                <h3 class="item-name">Levi Shoes</h3>
-                <div class="prices">
-                  <span class="price">$74.99</span
-                  ><span class="original-price">$124.99</span>
-                </div>
-
-                <div class="quantity"></div>
+            <img src="images/photo2.png" alt="" max-width="134px" />
+            <div class="item-info">
+              <h3 class="item-name">Levi Shoes</h3>
+              <div class="prices">
+                <span class="price">$74.99</span
+                ><span class="original-price">$124.99</span>
               </div>
+
+              <div class="quantity"></div>
             </div>
           </div>
         </div>
@@ -67,7 +63,7 @@
 
       <!-- buyer details -->
       <div class="buyer-details">
-        <form action="">
+        <form action="" method="get">
           <!-- buyer contact information -->
           <div class="info-parts">
             <h2>Contact information</h2>
@@ -100,7 +96,7 @@
             <label for="city">City</label>
             <input type="text" name="city" placeholder="Your city..." />
             <label for="country">Country</label>
-            <select multiple aria-placeholder="Your country..">
+            <select name="country" id="country">
               <option value="abc">Abc</option>
               <option value="def">Def</option>
               <option value="ghi">Ghi</option>
@@ -112,10 +108,10 @@
               name="postalCode"
               placeholder="Your postal code.."
             />
-            <input type="checkbox" name="save" id="save-info" />
+            <input type="checkbox" name="save" id="save" />
             <label for="save">Save this information for next time</label>
           </div>
-          <button>Continue</button>
+          <button type="button">Continue</button>
         </form>
       </div>
     </div>

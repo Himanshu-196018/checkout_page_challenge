@@ -9,7 +9,74 @@ body {
   font-weight: 600;
 }
 
+/* applying font-sizes */
+header > h1 {
+  font-size: 24px;
+}
+.item-name,
+.price,
+.net-amount {
+  font-size: 14px;
+}
+.original-price,
+input {
+  font-size: 12px;
+}
+label {
+  font-size: 10px;
+}
+
 /* styling main */
+header {
+  margin: 30px 0 0 18px;
+  display: inline-block;
+  color: #4e5150;
+}
+
+/* styling content */
+.content {
+  margin: 20px 12px 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/* styling cart and its items */
+.cart {
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.products img {
+  width: 122px;
+  height: 122px;
+  border-radius: 12px;
+}
+.products {
+  margin: 36px 30px;
+  display: flex;
+  column-gap: 18px;
+}
+.net-amount {
+  margin: 60px 20px 16px;
+}
+.net-amount > div {
+  height: 40px;
+  border-top: 1px solid #bdbdbd;
+  color: #333;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+
+/* Styling buyer's detail */
+.buyer-details {
+  margin-top: 40px;
+  //to edit form here
+}
 
 /* styling footer */
 .footer {
