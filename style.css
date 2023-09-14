@@ -43,6 +43,7 @@ header {
 
 /* styling cart and its items */
 .cart {
+  max-width: 385px;
   background-color: #f2f2f2;
   border-radius: 12px;
   display: flex;
@@ -75,7 +76,6 @@ header {
 /* Styling buyer's detail */
 .buyer-details {
   margin-top: 40px;
-  //to edit form here
 }
 
 /* styling footer */

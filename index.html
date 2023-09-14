@@ -67,50 +67,90 @@
           <!-- buyer contact information -->
           <div class="info-parts">
             <h2>Contact information</h2>
-            <label for="email">E-mail</label>
-            <input
-              type="email"
-              name="email"
-              placeholder="Enter your email..."
-            />
-            <label for="phone">Phone</label>
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Enter your phone..."
-              pattern="+[0-9]{2}-[0-9]{10}"
-            />
+
+            <div class="input-row">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email..."
+              />
+            </div>
+
+            <div class="input-row">
+              <label for="phone">Phone</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Enter your phone..."
+                pattern="+[0-9]{2}-[0-9]{10}"
+              />
+            </div>
           </div>
 
           <!-- buyer shipping address -->
           <div class="info-parts">
             <h2>Shipping address</h2>
-            <label for="fullName">Full name</label>
-            <input
-              type="text"
-              name="fullName"
-              placeholder="Enter your name..."
-            />
-            <label for="address">Address</label>
-            <input type="text" name="address" placeholder="Your address..." />
-            <label for="city">City</label>
-            <input type="text" name="city" placeholder="Your city..." />
-            <label for="country">Country</label>
-            <select name="country" id="country">
-              <option value="abc">Abc</option>
-              <option value="def">Def</option>
-              <option value="ghi">Ghi</option>
-              <option value="jkl">Jkl</option>
-            </select>
-            <label for="postalCode">Postal code</label>
-            <input
-              type="number"
-              name="postalCode"
-              placeholder="Your postal code.."
-            />
-            <input type="checkbox" name="save" id="save" />
-            <label for="save">Save this information for next time</label>
+
+            <div class="input-row">
+              <label for="fullName">Full name</label>
+              <input
+                type="text"
+                name="fullName"
+                id="fullName"
+                placeholder="Enter your name..."
+              />
+            </div>
+
+            <div class="input-row">
+              <label for="address">Address</label>
+              <input
+                type="text"
+                name="address"
+                id="address"
+                placeholder="Your address..."
+              />
+            </div>
+
+            <div class="input-row">
+              <label for="city">City</label>
+              <input
+                type="text"
+                name="city"
+                id="city"
+                placeholder="Your city..."
+              />
+            </div>
+
+            <div class="input-row">
+              <label for="country">Country</label>
+              <select name="country" id="country">
+                <option value="" class="place-holder">Your country..</option>
+                <option value="abc">Abc</option>
+                <option value="def">Def</option>
+                <option value="ghi">Ghi</option>
+                <option value="jkl">Jkl</option>
+              </select>
+            </div>
+
+            <div class="input-row">
+              <label for="postalCode">Postal code</label>
+              <input
+                type="number"
+                name="postalCode"
+                id="postalCode"
+                placeholder="Your postal code.."
+              />
+            </div>
+
+            <div class="input-row">
+              <input type="checkbox" name="save" id="save" />
+              <label for="save">Save this information for next time</label>
+            </div>
           </div>
+
           <button type="button">Continue</button>
         </form>
       </div>
