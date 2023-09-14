@@ -15,7 +15,8 @@ header > h1 {
 }
 .item-name,
 .price,
-.net-amount {
+.net-amount,
+.info-parts > h2 {
   font-size: 14px;
 }
 .original-price,
@@ -24,6 +25,7 @@ input {
 }
 label {
   font-size: 10px;
+  color: #4f4f4f;
 }
 
 /* styling main */
@@ -74,8 +76,53 @@ header {
 }
 
 /* Styling buyer's detail */
+.info-parts {
+  margin-top: 30px;
+}
 .buyer-details {
   margin-top: 40px;
+  max-width: 465px;
+}
+.info-parts > h2 {
+  color: #333;
+}
+.input-row {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.input-row input,
+.input-row select {
+  margin-top: 5px;
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 12px;
+  border: 1px solid #828282;
+  color: #828282;
+}
+.special-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+.save-info {
+  margin-top: 12px;
+  color: #828282;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  align-content: center;
+}
+#button {
+  margin-top: 20px;
+  width: 166px;
+  height: 54px;
+  border-radius: 12px;
+  background-color: orange;
+  color: white;
+  border: none;
+  position: relative;
+  left: calc(100% - 166px);
 }
 
 /* styling footer */

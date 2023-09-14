@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
       rel="shortcut icon"
       href="images/devchallenges.png"
       type="image/x-icon"
@@ -123,35 +127,36 @@
                 placeholder="Your city..."
               />
             </div>
+            <div class="special-row">
+              <div class="input-row">
+                <label for="country">Country</label>
+                <select name="country" id="country">
+                  <option value="" class="place-holder">Your country..</option>
+                  <option value="abc">Abc</option>
+                  <option value="def">Def</option>
+                  <option value="ghi">Ghi</option>
+                  <option value="jkl">Jkl</option>
+                </select>
+              </div>
 
-            <div class="input-row">
-              <label for="country">Country</label>
-              <select name="country" id="country">
-                <option value="" class="place-holder">Your country..</option>
-                <option value="abc">Abc</option>
-                <option value="def">Def</option>
-                <option value="ghi">Ghi</option>
-                <option value="jkl">Jkl</option>
-              </select>
+              <div class="input-row">
+                <label for="postalCode">Postal code</label>
+                <input
+                  type="number"
+                  name="postalCode"
+                  id="postalCode"
+                  placeholder="Your postal code.."
+                />
+              </div>
             </div>
 
-            <div class="input-row">
-              <label for="postalCode">Postal code</label>
-              <input
-                type="number"
-                name="postalCode"
-                id="postalCode"
-                placeholder="Your postal code.."
-              />
-            </div>
-
-            <div class="input-row">
+            <div class="save-info">
               <input type="checkbox" name="save" id="save" />
               <label for="save">Save this information for next time</label>
             </div>
           </div>
 
-          <button type="button">Continue</button>
+          <button id="button" type="button">Continue</button>
         </form>
       </div>
     </div>
