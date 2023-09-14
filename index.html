@@ -16,168 +16,173 @@
     <title>Checkout Page</title>
   </head>
   <body>
-    <!-- Header of the page -->
-    <header>
-      <h1>Checkout</h1>
-    </header>
+    <div>
+      <!-- Header of the page -->
+      <header>
+        <h1>Checkout</h1>
+      </header>
 
-    <!-- content of the page -->
-    <div class="content">
-      <!-- cart details -->
-      <div class="cart">
-        <!-- list of products -->
-        <div class="cart-list">
-          <div class="products">
-            <img src="images/photo1.png" alt="" max-width="134px" />
-            <div class="wrapper">
-              <div class="item-info">
-                <h3 class="item-name">Vintage Backbag</h3>
-                <div class="prices">
-                  <span class="price">$54.99</span
-                  ><span class="original-price">$94..99</span>
+      <!-- content of the page -->
+      <div class="content">
+        <!-- cart details -->
+        <div class="cart">
+          <!-- list of products -->
+          <div class="cart-list">
+            <div class="products">
+              <img src="images/photo1.png" alt="" max-width="134px" />
+              <div class="wrapper">
+                <div class="item-info">
+                  <h3 class="item-name">Vintage Backbag</h3>
+                  <div class="prices">
+                    <span class="price">$54.99</span>
+                    <span class="original-price">$94..99</span>
+                  </div>
+                </div>
+
+                <div class="quantity">
+                  <span class="material-icons minus">remove</span>
+                  <input type="number" value="1" />
+                  <span class="material-icons plus">add</span>
                 </div>
               </div>
+            </div>
 
-              <div class="quantity">
-                <span id="minus">-</span
-                ><input type="number" placeholder="1" /><span id="plus">+</span>
+            <div class="products">
+              <img src="images/photo2.png" alt="" max-width="134px" />
+              <div class="wrapper">
+                <div class="item-info">
+                  <h3 class="item-name">Levi Shoes</h3>
+                  <div class="prices">
+                    <span class="price">$74.99</span>
+                    <span class="original-price">$124.99</span>
+                  </div>
+                </div>
+
+                <div class="quantity">
+                  <span class="material-icons minus">remove</span>
+                  <input type="number" placeholder="1" />
+                  <span class="material-icons plus">add</span>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="products">
-            <img src="images/photo2.png" alt="" max-width="134px" />
-            <div class="wrapper">
-              <div class="item-info">
-                <h3 class="item-name">Levi Shoes</h3>
-                <div class="prices">
-                  <span class="price">$74.99</span
-                  ><span class="original-price">$124.99</span>
-                </div>
-              </div>
-
-              <div class="quantity">
-                <span id="minus">-</span
-                ><input type="number" placeholder="1" /><span id="plus">+</span>
-              </div>
+          <!-- total amount to be paid -->
+          <div class="net-amount">
+            <div class="shipping">
+              <span>Shipping</span><span class="pay">$19</span>
+            </div>
+            <div class="total">
+              <span>Total</span><span class="pay">$148.98</span>
             </div>
           </div>
         </div>
 
-        <!-- total amount to be paid -->
-        <div class="net-amount">
-          <div class="shipping">
-            <span>Shipping</span><span class="pay">$19</span>
-          </div>
-          <div class="total">
-            <span>Total</span><span class="pay">$148.98</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- buyer details -->
-      <div class="buyer-details">
-        <form action="" method="get">
-          <!-- buyer contact information -->
-          <div class="info-parts">
-            <h2>Contact information</h2>
-
-            <div class="input-row">
-              <label for="email">E-mail</label>
-              <i class="material-icons icon">email</i>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Enter your email..."
-              />
-            </div>
-
-            <div class="input-row">
-              <label for="phone">Phone</label>
-              <i class="material-icons icon">call</i>
-              <input
-                type="tel"
-                name="phone"
-                id="phone"
-                placeholder="Enter your phone..."
-                pattern="+[0-9]{2}-[0-9]{10}"
-              />
-            </div>
-          </div>
-
-          <!-- buyer shipping address -->
-          <div class="info-parts">
-            <h2>Shipping address</h2>
-
-            <div class="input-row">
-              <label for="fullName">Full name</label>
-              <i class="material-icons icon">account_circle</i>
-              <input
-                type="text"
-                name="fullName"
-                id="fullName"
-                placeholder="Enter your name..."
-              />
-            </div>
-
-            <div class="input-row">
-              <label for="address">Address</label>
-              <i class="material-icons icon">home</i>
-              <input
-                type="text"
-                name="address"
-                id="address"
-                placeholder="Your address..."
-              />
-            </div>
-
-            <div class="input-row">
-              <label for="city">City</label>
-              <i class="material-icons icon">business</i>
-              <input
-                type="text"
-                name="city"
-                id="city"
-                placeholder="Your city..."
-              />
-            </div>
-            <div class="special-row">
-              <div class="input-row">
-                <label for="country">Country</label>
-                <i class="material-icons icon">business</i>
-                <select name="country" id="country">
-                  <option value="" class="place-holder">Your country..</option>
-                  <option value="abc">Abc</option>
-                  <option value="def">Def</option>
-                  <option value="ghi">Ghi</option>
-                  <option value="jkl">Jkl</option>
-                </select>
-              </div>
+        <!-- buyer details -->
+        <div class="buyer-details">
+          <form action="" method="get">
+            <!-- buyer contact information -->
+            <div class="info-parts">
+              <h2>Contact information</h2>
 
               <div class="input-row">
-                <label for="postalCode">Postal code</label>
-                <i class="material-icons icon">markunread_mailbox</i>
+                <label for="email">E-mail</label>
+                <i class="material-icons icon">email</i>
                 <input
-                  type="number"
-                  name="postalCode"
-                  id="postalCode"
-                  placeholder="Your postal code.."
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email..."
+                />
+              </div>
+
+              <div class="input-row">
+                <label for="phone">Phone</label>
+                <i class="material-icons icon">call</i>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="Enter your phone..."
+                  pattern="+[0-9]{2}-[0-9]{10}"
                 />
               </div>
             </div>
 
-            <div class="save-info">
-              <input type="checkbox" name="save" id="save" />
-              <label for="save">Save this information for next time</label>
-            </div>
-          </div>
+            <!-- buyer shipping address -->
+            <div class="info-parts">
+              <h2>Shipping address</h2>
 
-          <button id="button" type="button">Continue</button>
-        </form>
+              <div class="input-row">
+                <label for="fullName">Full name</label>
+                <i class="material-icons icon">account_circle</i>
+                <input
+                  type="text"
+                  name="fullName"
+                  id="fullName"
+                  placeholder="Enter your name..."
+                />
+              </div>
+
+              <div class="input-row">
+                <label for="address">Address</label>
+                <i class="material-icons icon">home</i>
+                <input
+                  type="text"
+                  name="address"
+                  id="address"
+                  placeholder="Your address..."
+                />
+              </div>
+
+              <div class="input-row">
+                <label for="city">City</label>
+                <i class="material-icons icon">business</i>
+                <input
+                  type="text"
+                  name="city"
+                  id="city"
+                  placeholder="Your city..."
+                />
+              </div>
+              <div class="special-row">
+                <div class="input-row">
+                  <label for="country">Country</label>
+                  <i class="material-icons icon">business</i>
+                  <select name="country" id="country">
+                    <option value="" class="place-holder">
+                      Your country..
+                    </option>
+                    <option value="abc">Abc</option>
+                    <option value="def">Def</option>
+                    <option value="ghi">Ghi</option>
+                    <option value="jkl">Jkl</option>
+                  </select>
+                </div>
+
+                <div class="input-row">
+                  <label for="postalCode">Postal code</label>
+                  <i class="material-icons icon">markunread_mailbox</i>
+                  <input
+                    type="number"
+                    name="postalCode"
+                    id="postalCode"
+                    placeholder="Your postal code.."
+                  />
+                </div>
+              </div>
+
+              <div class="save-info">
+                <input type="checkbox" name="save" id="save" />
+                <label for="save">Save this information for next time</label>
+              </div>
+            </div>
+
+            <button id="button" type="button">Continue</button>
+          </form>
+        </div>
       </div>
     </div>
-
     <!-- footer of the page -->
     <div class="footer">
       <p class="text">

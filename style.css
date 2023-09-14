@@ -8,6 +8,10 @@ body {
   font-family: Montserrat;
   font-weight: 600;
 }
+body > div {
+  max-width: 500px;
+  margin: 0 auto;
+}
 
 /* applying font-sizes */
 header > h1 {
@@ -46,6 +50,7 @@ header {
 /* styling cart and its items */
 .cart {
   max-width: 385px;
+  height: fit-content;
   background-color: #f2f2f2;
   border-radius: 12px;
   display: flex;
@@ -58,7 +63,7 @@ header {
   border-radius: 12px;
 }
 .products {
-  margin: 36px 30px;
+  margin: 36px 28px;
   display: flex;
   column-gap: 18px;
 }
@@ -92,14 +97,23 @@ header {
   font-size: 16px;
   color: #333;
 }
+.quantity {
+  position: relative;
+}
 .quantity > span {
-  margin-top: 10px;
+  margin-top: 13px;
   width: 24px;
   height: 24px;
-  background-color: #d1d1d1;
   border-radius: 4px;
   position: absolute;
   color: #828282;
+  background-color: #ddd;
+}
+.minus {
+  left: 15px;
+}
+.plus {
+  left: 85px;
 }
 
 /* styling billing amount */
@@ -166,11 +180,58 @@ header {
   left: calc(100% - 166px);
 }
 .icon {
-  display: inline-block;
+  margin: 26px 0 0 8px;
   position: absolute;
-  margin: 27px 0 0 8px;
   font-size: 20px;
   color: #828282;
+}
+
+/* styling for larger screens */
+@media screen and (min-width: 500px) {
+  /* applying fonts for larger screens */
+  header > h1 {
+    font-size: 36px;
+  }
+  .info-parts > h2,
+  .net-amount {
+    font-size: 18px;
+  }
+  .item-name,
+  .price,
+  input {
+    font-size: 16px;
+  }
+  label {
+    font-size: 12px;
+  }
+
+  /* syling contents */
+  .content {
+    justify-content: space-between;
+  }
+  .products img {
+    width: 135px;
+    height: 135px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  body > div {
+    max-width: 850px;
+  }
+  header {
+    margin-left: 0;
+  }
+  .content {
+    margin: 70px auto 0;
+    flex-direction: row-reverse;
+  }
+  .buyer-details {
+    margin-top: 0;
+  }
+  .info-parts:first-child {
+    margin-top: -20px;
+  }
 }
 
 /* styling footer */
