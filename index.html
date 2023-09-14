@@ -29,27 +29,37 @@
         <div class="cart-list">
           <div class="products">
             <img src="images/photo1.png" alt="" max-width="134px" />
-            <div class="item-info">
-              <h3 class="item-name">Vintage Backbag</h3>
-              <div class="prices">
-                <span class="price">$54.99</span
-                ><span class="original-price">$94..99</span>
+            <div class="wrapper">
+              <div class="item-info">
+                <h3 class="item-name">Vintage Backbag</h3>
+                <div class="prices">
+                  <span class="price">$54.99</span
+                  ><span class="original-price">$94..99</span>
+                </div>
               </div>
 
-              <div class="quantity"></div>
+              <div class="quantity">
+                <span id="minus">-</span
+                ><input type="number" placeholder="1" /><span id="plus">+</span>
+              </div>
             </div>
           </div>
 
           <div class="products">
             <img src="images/photo2.png" alt="" max-width="134px" />
-            <div class="item-info">
-              <h3 class="item-name">Levi Shoes</h3>
-              <div class="prices">
-                <span class="price">$74.99</span
-                ><span class="original-price">$124.99</span>
+            <div class="wrapper">
+              <div class="item-info">
+                <h3 class="item-name">Levi Shoes</h3>
+                <div class="prices">
+                  <span class="price">$74.99</span
+                  ><span class="original-price">$124.99</span>
+                </div>
               </div>
 
-              <div class="quantity"></div>
+              <div class="quantity">
+                <span id="minus">-</span
+                ><input type="number" placeholder="1" /><span id="plus">+</span>
+              </div>
             </div>
           </div>
         </div>
@@ -74,6 +84,7 @@
 
             <div class="input-row">
               <label for="email">E-mail</label>
+              <i class="material-icons icon">email</i>
               <input
                 type="email"
                 name="email"
@@ -84,6 +95,7 @@
 
             <div class="input-row">
               <label for="phone">Phone</label>
+              <i class="material-icons icon">call</i>
               <input
                 type="tel"
                 name="phone"
@@ -100,6 +112,7 @@
 
             <div class="input-row">
               <label for="fullName">Full name</label>
+              <i class="material-icons icon">account_circle</i>
               <input
                 type="text"
                 name="fullName"
@@ -110,6 +123,7 @@
 
             <div class="input-row">
               <label for="address">Address</label>
+              <i class="material-icons icon">home</i>
               <input
                 type="text"
                 name="address"
@@ -120,6 +134,7 @@
 
             <div class="input-row">
               <label for="city">City</label>
+              <i class="material-icons icon">business</i>
               <input
                 type="text"
                 name="city"
@@ -130,6 +145,7 @@
             <div class="special-row">
               <div class="input-row">
                 <label for="country">Country</label>
+                <i class="material-icons icon">business</i>
                 <select name="country" id="country">
                   <option value="" class="place-holder">Your country..</option>
                   <option value="abc">Abc</option>
@@ -141,6 +157,7 @@
 
               <div class="input-row">
                 <label for="postalCode">Postal code</label>
+                <i class="material-icons icon">markunread_mailbox</i>
                 <input
                   type="number"
                   name="postalCode"
