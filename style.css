@@ -185,6 +185,11 @@ header {
   font-size: 20px;
   color: #828282;
 }
+input:focus,
+select:focus {
+  color: #333;
+  outline: none;
+}
 
 /* styling for larger screens */
 @media screen and (min-width: 500px) {
@@ -198,7 +203,8 @@ header {
   }
   .item-name,
   .price,
-  input {
+  input,
+  select {
     font-size: 16px;
   }
   label {
@@ -206,6 +212,9 @@ header {
   }
 
   /* syling contents */
+  .up {
+    margin-top: 70px;
+  }
   .content {
     justify-content: space-between;
   }
@@ -213,11 +222,24 @@ header {
     width: 135px;
     height: 135px;
   }
+  .input-row,
+  .save-info {
+    margin-top: 20px;
+  }
+  .input-row input,
+  .input-row select {
+    height: 56px;
+    padding-left: 39px;
+  }
+  .icon {
+    margin-top: 37px;
+    font-size: 22px;
+  }
 }
 
 @media screen and (min-width: 900px) {
   body > div {
-    max-width: 850px;
+    max-width: 950px;
   }
   header {
     margin-left: 0;

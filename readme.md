@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your Project Name}</h1>
+<h1 align="center">Chechout Page</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -8,15 +8,15 @@
 
 <div align="center">
   <h3>
-    <a href="{DEMO LINK}">
+    <a href="https://himanshu-196018.github.io/checkout_page_challenge/">
       Demo
     </a>
     <span> | </span>
-    <a href="{REPO LINK}">
+    <a href="https://github.com/Himanshu-196018/checkout_page_challenge">
       Solution
     </a>
     <span> | </span>
-    <a href="{CHALLANGE LINK}">
+    <a href="https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO">
       Challenge
     </a>
   </h3>
@@ -38,13 +38,13 @@
 
 ![screenshot](images/screenshot.png)
 
-This project is solution to the challenge to build {TITLE OF PAGE} at <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>. It is a responsive web page showcasing {FEATURE}. I have successfully completed this challange and deployed the web page successfully.
+This project is solution to the challenge to build Checkout Page at <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>. It is a responsive web page showcasing Chekout form filled by buyers when shopping. I have successfully completed this challenge and deployed the web page successfully.
 
-- You can view deployed page <a href="{LINK TO DEMO}">here</a>.
+- You can view deployed page <a href="https://himanshu-196018.github.io/checkout_page_challenge/">here</a>.
 
-- This challange was better for improving skills for placing elements at different locations and working with multiple images. It was a wonderfull experience for me. I faced many challenges during this one challange but got a lot of experince from building it.
+- This challenge was better for improving skills for working with form elements. It was a wonderfull experience for me. I faced many challenges during this challenge but got a lot of experince from building it.
 
-- From this challange, I have learned better positioning of the elemnts using css. I also leanred flex and grid layout somewhat and how to use them. I came to know that it is better to designed unit(smallest) elements first which improve the placement of other elements.
+- From this challenge, I have learned better positioning of the elemnts using css. I also leanred flex and grid layout somewhat and how to use them. I came to know that it is better to designed unit(smallest) elements first which improve the placement of other elements.
 
 - Hit and trial is best when learning at a beginner level, after some time you will get the idea what is happening and gain better understanding for desingning a web page. Which will improve your overall skills and improve your pace of work. Keep building keep trying.
 
@@ -59,7 +59,7 @@ This project is solution to the challenge to build {TITLE OF PAGE} at <a href="h
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge]({CHALLENGE LINK}) was to build an application/site to complete the given user stories.
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO) was to build an application/site to complete the given user stories.
 
 ## Acknowledgements
 
